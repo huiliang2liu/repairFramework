@@ -17,9 +17,12 @@ package okhttp3.internal.http2;
 
 import java.io.IOException;
 
-/**
- * Thrown when an HTTP/2 connection is shutdown (either explicitly or if the peer has sent a GOAWAY
- * frame) and an attempt is made to use the connection.
- */
-public final class ConnectionShutdownException extends IOException {
+/** Thrown when an HTTP/2 stream is canceled without damage to the socket that carries it. */
+public final class StreamResetException extends IOException {
+  public final ErrorCode errorCode;
+
+  public StreamResetException(ErrorCode errorCode) {
+    super("stream was reset: " + errorCode);
+    this.errorCode = errorCode;
+  }
 }
