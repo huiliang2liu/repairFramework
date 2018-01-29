@@ -1,9 +1,12 @@
 package com.xh.util;
 
+import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.PushbackInputStream;
 import java.io.RandomAccessFile;
 import java.io.Serializable;
 import java.net.MalformedURLException;
@@ -1006,6 +1009,68 @@ public class FileManagemet {
 		return Environment.getExternalStorageState().equals(
 				Environment.MEDIA_MOUNTED);
 	}
+	  /**
+	   *  
+	   * 2018 2018-1-29 上午10:53:28
+	   * annotation：获取文件的编码
+	   * author：liuhuiliang
+	   * email ：825378291@qq.com
+	   * @param fileName
+	   * @return
+	   * @throws IOException
+	   *String
+	   */
+    public String getCharset(String fileName) throws IOException{  
+  
+        BufferedInputStream bin = new BufferedInputStream(new FileInputStream(fileName));      
+        int p = (bin.read() << 8) +bin.read();  
+  
+        String code = null;  
+        switch (p) {  
+            case 0xefbb:  
+                code = "UTF-8";  
+                break;  
+            case 0xfffe:  
+                code = "Unicode";   
+                break;  
+            case 0xfeff:  
+                code = "UTF-16BE";  
+                break;  
+            default:  
+                code = "GBK";  
+        }  
+        return code;  
+    }  
+  
+    /**
+     * 
+     * 2018 2018-1-29 上午10:53:44
+     * annotation：去掉文件中的头部
+     * author：liuhuiliang
+     * email ：825378291@qq.com
+     * @param in
+     * @return
+     * @throws IOException
+     *InputStream
+     */
+    public static InputStream getInputStream(InputStream in) throws IOException {  
+  
+        PushbackInputStream testin = new PushbackInputStream(in);  
+        int ch = testin.read();  
+        if (ch != 0xEF) {  
+            testin.unread(ch);  
+        } else if ((ch = testin.read()) != 0xBB) {  
+            testin.unread(ch);  
+            testin.unread(0xef);  
+        } else if ((ch = testin.read()) != 0xBF) {  
+            throw new IOException("错误的UTF-8格式文件");  
+        } else {  
+        // 不需要做，这里是bom头被读完了  
+        // System.out.println("still exist bom");  
+        }  
+        return testin;  
+  
+    }  
 
 	/**
 	 * file转化位url xh 2017-3-13 上午10:07:24
