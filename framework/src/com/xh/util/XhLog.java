@@ -11,6 +11,10 @@ public class XhLog {
 	private static final boolean IS_DEBUG = true;
 	private static String TAG = XhLog.class.getName();
 
+	public static void setTAG(String tAG) {
+		TAG = tAG;
+	}
+
 	// private void man() {
 	// // TODO Auto-generated method stub
 	//
