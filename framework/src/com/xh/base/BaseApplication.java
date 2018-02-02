@@ -85,6 +85,7 @@ public class BaseApplication extends Application implements
 		// TODO Auto-generated method stub
 		File file;
 		boolean wes = false;
+		XhLog.setTAG(getPackageName());
 		try {
 			if (FileManagemet.sdcardIs()) {
 				XhLog.e(TAG, "°²×°ÁËsdcard");
