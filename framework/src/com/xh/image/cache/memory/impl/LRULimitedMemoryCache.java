@@ -22,31 +22,38 @@ import com.xh.image.cache.memory.LimitedMemoryCache;
 import java.lang.ref.Reference;
 import java.lang.ref.WeakReference;
 import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Map.Entry;
 
 /**
  * Limited {@link Bitmap bitmap} cache. Provides {@link Bitmap bitmaps} storing. Size of all stored bitmaps will not to
- * exceed size limit. When cache reaches limit size then cache clearing is processed by FIFO principle.<br />
+ * exceed size limit. When cache reaches limit size then the least recently used bitmap is deleted from cache.<br />
  * <br />
  * <b>NOTE:</b> This cache uses strong and weak references for stored Bitmaps. Strong references - for limited count of
  * Bitmaps (depends on cache size), weak references - for all other cached Bitmaps.
  *
  * @author Sergey Tarasevich (nostra13[at]gmail[dot]com)
- * @since 1.0.0
+ * @since 1.3.0
  */
-public class FIFOLimitedMemoryCache extends LimitedMemoryCache {
+public class LRULimitedMemoryCache extends LimitedMemoryCache {
 
-	private final List<Bitmap> queue = Collections.synchronizedList(new LinkedList<Bitmap>());
+	private static final int INITIAL_CAPACITY = 10;
+	private static final float LOAD_FACTOR = 1.1f;
 
-	public FIFOLimitedMemoryCache(int sizeLimit) {
-		super(sizeLimit);
+	/** Cache providing Least-Recently-Used logic */
+	private final Map<String, Bitmap> lruCache = Collections.synchronizedMap(new LinkedHashMap<String, Bitmap>(INITIAL_CAPACITY, LOAD_FACTOR, true));
+
+	/** @param maxSize Maximum sum of the sizes of the Bitmaps in this cache */
+	public LRULimitedMemoryCache(int maxSize) {
+		super(maxSize);
 	}
 
 	@Override
 	public boolean put(String key, Bitmap value) {
 		if (super.put(key, value)) {
-			queue.add(value);
+			lruCache.put(key, value);
 			return true;
 		} else {
 			return false;
@@ -54,17 +61,20 @@ public class FIFOLimitedMemoryCache extends LimitedMemoryCache {
 	}
 
 	@Override
+	public Bitmap get(String key) {
+		lruCache.get(key); // call "get" for LRU logic
+		return super.get(key);
+	}
+
+	@Override
 	public Bitmap remove(String key) {
-		Bitmap value = super.get(key);
-		if (value != null) {
-			queue.remove(value);
-		}
+		lruCache.remove(key);
 		return super.remove(key);
 	}
 
 	@Override
 	public void clear() {
-		queue.clear();
+		lruCache.clear();
 		super.clear();
 	}
 
@@ -75,7 +85,16 @@ public class FIFOLimitedMemoryCache extends LimitedMemoryCache {
 
 	@Override
 	protected Bitmap removeNext() {
-		return queue.remove(0);
+		Bitmap mostLongUsedValue = null;
+		synchronized (lruCache) {
+			Iterator<Entry<String, Bitmap>> it = lruCache.entrySet().iterator();
+			if (it.hasNext()) {
+				Entry<String, Bitmap> entry = it.next();
+				mostLongUsedValue = entry.getValue();
+				it.remove();
+			}
+		}
+		return mostLongUsedValue;
 	}
 
 	@Override
