@@ -6,128 +6,128 @@ import android.widget.ImageView;
 import com.xh.image.display.XhIDisplay;
 
 /**
- * @version åˆ›å»ºæ—¶é—´ï¼š2017-12-22 ä¸‹åˆ5:34:55
- * é¡¹ç›®ï¼šrepair
- * åŒ…åï¼šcom.xh.image
- * æ–‡ä»¶åï¼šIImageManager.java
- * ä½œè€…ï¼šlhl
- * è¯´æ˜:
+ * @version ´´½¨Ê±¼ä£º2017-12-22 ÏÂÎç5:34:55
+ * ÏîÄ¿£ºrepair
+ * °üÃû£ºcom.xh.image
+ * ÎÄ¼şÃû£ºIImageManager.java
+ * ×÷Õß£ºlhl
+ * ËµÃ÷:
  */
 
 public interface IImageManager {
 	/**
 	 * 
-	 * lhl 2017-11-20 ä¸‹åˆ4:13:41 è¯´æ˜ï¼šåŠ è½½å›¾ç‰‡
+	 * lhl 2017-11-20 ÏÂÎç4:13:41 ËµÃ÷£º¼ÓÔØÍ¼Æ¬
 	 * 
 	 * @param view
-	 *            æ˜¾ç¤ºçš„è§†å›¾
+	 *            ÏÔÊ¾µÄÊÓÍ¼
 	 * @param path
-	 *            å›¾ç‰‡åœ°å€ void
+	 *            Í¼Æ¬µØÖ· void
 	 */
 	public void loadImage(ImageView view, String path);
 
 	/**
 	 * 
-	 * lhl 2017-11-20 ä¸‹åˆ4:14:21 è¯´æ˜ï¼šåŠ è½½å›¾ç‰‡
+	 * lhl 2017-11-20 ÏÂÎç4:14:21 ËµÃ÷£º¼ÓÔØÍ¼Æ¬
 	 * 
 	 * @param view
-	 *            æ˜¾ç¤ºçš„è§†å›¾
+	 *            ÏÔÊ¾µÄÊÓÍ¼
 	 * @param path
-	 *            å›¾ç‰‡åœ°å€
+	 *            Í¼Æ¬µØÖ·
 	 * @param saveTime
-	 *            ç¼“å­˜æ—¶é—´ void
+	 *            »º´æÊ±¼ä void
 	 */
 	public void loadImage(ImageView view, String path, long saveTime);
 
 	/**
 	 * 
-	 * lhl 2017-11-20 ä¸‹åˆ4:14:46 è¯´æ˜ï¼šåŠ è½½å›¾ç‰‡æ»¡æ§ä»¶
+	 * lhl 2017-11-20 ÏÂÎç4:14:46 ËµÃ÷£º¼ÓÔØÍ¼Æ¬Âú¿Ø¼ş
 	 * 
 	 * @param view
-	 *            æ˜¾ç¤ºçš„è§†å›¾
+	 *            ÏÔÊ¾µÄÊÓÍ¼
 	 * @param path
-	 *            å›¾ç‰‡åœ°å€
+	 *            Í¼Æ¬µØÖ·
 	 * @param saveTime
-	 *            ç¼“å­˜æ—¶é—´ void
+	 *            »º´æÊ±¼ä void
 	 */
 	public void loadImageFull(ImageView view, String path, long saveTime);
 
 	/**
 	 * 
-	 * lhl 2017-11-20 ä¸‹åˆ4:15:23 è¯´æ˜ï¼šåŠ è½½å›¾ç‰‡æ»¡æ§ä»¶
+	 * lhl 2017-11-20 ÏÂÎç4:15:23 ËµÃ÷£º¼ÓÔØÍ¼Æ¬Âú¿Ø¼ş
 	 * 
 	 * @param view
-	 *            æ˜¾ç¤ºçš„è§†å›¾
+	 *            ÏÔÊ¾µÄÊÓÍ¼
 	 * @param path
-	 *            å›¾ç‰‡åœ°å€ void
+	 *            Í¼Æ¬µØÖ· void
 	 */
 	public void loadImageFull(ImageView view, String path);
 
 	/**
 	 * 
-	 * lhl 2017-11-20 ä¸‹åˆ4:15:45 è¯´æ˜ï¼šåŠ è½½å›¾ç‰‡
+	 * lhl 2017-11-20 ÏÂÎç4:15:45 ËµÃ÷£º¼ÓÔØÍ¼Æ¬
 	 * 
 	 * @param view
-	 *            æ˜¾ç¤ºçš„è§†å›¾
+	 *            ÏÔÊ¾µÄÊÓÍ¼
 	 * @param path
-	 *            å›¾ç‰‡åœ°å€
+	 *            Í¼Æ¬µØÖ·
 	 * @param display
-	 *            é€‚é…å™¨ void
+	 *            ÊÊÅäÆ÷ void
 	 */
 	public void loadImage(ImageView view, String path, XhIDisplay display);
 
 	/**
 	 * 
-	 * lhl 2017-11-20 ä¸‹åˆ4:16:11 è¯´æ˜ï¼šåŠ è½½å›¾ç‰‡
+	 * lhl 2017-11-20 ÏÂÎç4:16:11 ËµÃ÷£º¼ÓÔØÍ¼Æ¬
 	 * 
 	 * @param view
-	 *            æ˜¾ç¤ºçš„è§†å›¾
+	 *            ÏÔÊ¾µÄÊÓÍ¼
 	 * @param path
-	 *            å›¾ç‰‡åœ°å€
+	 *            Í¼Æ¬µØÖ·
 	 * @param saveTime
-	 *            ç¼“å­˜æ—¶é—´
+	 *            »º´æÊ±¼ä
 	 * @param display
-	 *            é€‚é…å™¨ void
+	 *            ÊÊÅäÆ÷ void
 	 */
 	public void loadImage(ImageView view, String path, long saveTime,
 			XhIDisplay display);
 
 	/**
 	 * 
-	 * lhl 2017-11-20 ä¸‹åˆ4:16:11 è¯´æ˜ï¼šåŠ è½½å›¾ç‰‡
+	 * lhl 2017-11-20 ÏÂÎç4:16:11 ËµÃ÷£º¼ÓÔØÍ¼Æ¬
 	 * 
 	 * @param view
-	 *            æ˜¾ç¤ºçš„è§†å›¾
+	 *            ÏÔÊ¾µÄÊÓÍ¼
 	 * @param path
-	 *            å›¾ç‰‡åœ°å€
+	 *            Í¼Æ¬µØÖ·
 	 * @param saveTime
-	 *            ç¼“å­˜æ—¶é—´
+	 *            »º´æÊ±¼ä
 	 * @param display
-	 *            é€‚é…å™¨ void
+	 *            ÊÊÅäÆ÷ void
 	 */
 	public void loadImage(ImageView view, String path, long saveTime,
 			XhIDisplay display, XhImageListen listen);
 
 	/**
 	 * 
-	 * lhl 2017-11-20 ä¸‹åˆ4:16:40 è¯´æ˜ï¼šåŠ è½½å›¾ç‰‡
+	 * lhl 2017-11-20 ÏÂÎç4:16:40 ËµÃ÷£º¼ÓÔØÍ¼Æ¬
 	 * 
 	 * @param view
-	 *            æ˜¾ç¤ºçš„è§†å›¾
+	 *            ÏÔÊ¾µÄÊÓÍ¼
 	 * @param path
-	 *            å›¾ç‰‡åœ°å€
+	 *            Í¼Æ¬µØÖ·
 	 * @param startImage
-	 *            åŠ è½½ä¸­æ˜¾ç¤ºçš„å›¾ç‰‡
+	 *            ¼ÓÔØÖĞÏÔÊ¾µÄÍ¼Æ¬
 	 * @param failureImage
-	 *            åŠ è½½å¤±è´¥æ˜¾ç¤ºçš„å›¾ç‰‡
+	 *            ¼ÓÔØÊ§°ÜÏÔÊ¾µÄÍ¼Æ¬
 	 * @param saveTime
-	 *            ç¼“å­˜æ—¶é—´
+	 *            »º´æÊ±¼ä
 	 * @param width
-	 *            å›¾ç‰‡å®½åº¦
+	 *            Í¼Æ¬¿í¶È
 	 * @param height
-	 *            å›¾ç‰‡é«˜åº¦
+	 *            Í¼Æ¬¸ß¶È
 	 * @param display
-	 *            é€‚é…å™¨ void
+	 *            ÊÊÅäÆ÷ void
 	 */
 	public void loadImage(ImageView view, String path, int startImage,
 			int failureImage, long saveTime, int width, int height,
@@ -135,117 +135,117 @@ public interface IImageManager {
 
 	/**
 	 * 
-	 * lhl 2017-11-20 ä¸‹åˆ4:17:31 è¯´æ˜ï¼š åŠ è½½èƒŒæ™¯å›¾ç‰‡
+	 * lhl 2017-11-20 ÏÂÎç4:17:31 ËµÃ÷£º ¼ÓÔØ±³¾°Í¼Æ¬
 	 * 
 	 * @param view
-	 *            æ˜¾ç¤ºçš„è§†å›¾
+	 *            ÏÔÊ¾µÄÊÓÍ¼
 	 * @param path
-	 *            å›¾ç‰‡åœ°å€
+	 *            Í¼Æ¬µØÖ·
 	 * @param savaTime
-	 *            ç¼“å­˜æ—¶é—´ void
+	 *            »º´æÊ±¼ä void
 	 */
 	public void loadBackground(View view, String path, long savaTime);
 
 	/**
 	 * 
-	 * lhl 2017-11-20 ä¸‹åˆ4:18:02 è¯´æ˜ï¼šåŠ è½½èƒŒæ™¯å›¾ç‰‡
+	 * lhl 2017-11-20 ÏÂÎç4:18:02 ËµÃ÷£º¼ÓÔØ±³¾°Í¼Æ¬
 	 * 
 	 * @param view
-	 *            æ˜¾ç¤ºçš„è§†å›¾
+	 *            ÏÔÊ¾µÄÊÓÍ¼
 	 * @param path
-	 *            å›¾ç‰‡åœ°å€ void
+	 *            Í¼Æ¬µØÖ· void
 	 */
 	public void loadBackground(View view, String path);
 
 	/**
 	 * 
-	 * lhl 2017-11-20 ä¸‹åˆ4:18:19 è¯´æ˜ï¼šåŠ è½½èƒŒæ™¯å›¾ç‰‡æ»¡æ§ä»¶
+	 * lhl 2017-11-20 ÏÂÎç4:18:19 ËµÃ÷£º¼ÓÔØ±³¾°Í¼Æ¬Âú¿Ø¼ş
 	 * 
 	 * @param view
-	 *            æ˜¾ç¤ºçš„è§†å›¾
+	 *            ÏÔÊ¾µÄÊÓÍ¼
 	 * @param path
-	 *            å›¾ç‰‡åœ°å€
+	 *            Í¼Æ¬µØÖ·
 	 * @param savaTime
-	 *            ç¼“å­˜æ—¶é—´ void
+	 *            »º´æÊ±¼ä void
 	 */
 	public void loadBackgroundFull(View view, String path, long savaTime);
 
 	/**
 	 * 
-	 * lhl 2017-11-20 ä¸‹åˆ4:18:39 è¯´æ˜ï¼šåŠ è½½èƒŒæ™¯å›¾ç‰‡æ»¡æ§ä»¶
+	 * lhl 2017-11-20 ÏÂÎç4:18:39 ËµÃ÷£º¼ÓÔØ±³¾°Í¼Æ¬Âú¿Ø¼ş
 	 * 
 	 * @param view
-	 *            æ˜¾ç¤ºçš„è§†å›¾
+	 *            ÏÔÊ¾µÄÊÓÍ¼
 	 * @param path
-	 *            å›¾ç‰‡åœ°å€ void
+	 *            Í¼Æ¬µØÖ· void
 	 */
 	public void loadBackgroundFull(View view, String path) ;
 
 	/**
 	 * 
-	 * lhl 2017-11-20 ä¸‹åˆ4:18:53 è¯´æ˜ï¼šåŠ è½½èƒŒæ™¯å›¾ç‰‡
+	 * lhl 2017-11-20 ÏÂÎç4:18:53 ËµÃ÷£º¼ÓÔØ±³¾°Í¼Æ¬
 	 * 
 	 * @param view
-	 *            æ˜¾ç¤ºçš„è§†å›¾
+	 *            ÏÔÊ¾µÄÊÓÍ¼
 	 * @param path
-	 *            å›¾ç‰‡åœ°å€
+	 *            Í¼Æ¬µØÖ·
 	 * @param display
-	 *            é€‚é…å™¨ void
+	 *            ÊÊÅäÆ÷ void
 	 */
 	public void loadBackground(View view, String path, XhIDisplay display);
 
 	/**
 	 * 
-	 * lhl 2017-11-20 ä¸‹åˆ4:19:20 è¯´æ˜ï¼šåŠ è½½èƒŒæ™¯å›¾ç‰‡
+	 * lhl 2017-11-20 ÏÂÎç4:19:20 ËµÃ÷£º¼ÓÔØ±³¾°Í¼Æ¬
 	 * 
 	 * @param view
-	 *            æ˜¾ç¤ºçš„è§†å›¾
+	 *            ÏÔÊ¾µÄÊÓÍ¼
 	 * @param path
-	 *            å›¾ç‰‡åœ°å€
+	 *            Í¼Æ¬µØÖ·
 	 * @param saveTime
-	 *            ç¼“å­˜æ—¶é—´
+	 *            »º´æÊ±¼ä
 	 * @param display
-	 *            é€‚é…å™¨ void
+	 *            ÊÊÅäÆ÷ void
 	 */
 	public void loadBackground(View view, String path, long saveTime,
 			XhIDisplay display);
 
 	/**
 	 * 
-	 * lhl 2017-11-20 ä¸‹åˆ4:19:20 è¯´æ˜ï¼šåŠ è½½èƒŒæ™¯å›¾ç‰‡
+	 * lhl 2017-11-20 ÏÂÎç4:19:20 ËµÃ÷£º¼ÓÔØ±³¾°Í¼Æ¬
 	 * 
 	 * @param view
-	 *            æ˜¾ç¤ºçš„è§†å›¾
+	 *            ÏÔÊ¾µÄÊÓÍ¼
 	 * @param path
-	 *            å›¾ç‰‡åœ°å€
+	 *            Í¼Æ¬µØÖ·
 	 * @param saveTime
-	 *            ç¼“å­˜æ—¶é—´
+	 *            »º´æÊ±¼ä
 	 * @param display
-	 *            é€‚é…å™¨ void
+	 *            ÊÊÅäÆ÷ void
 	 */
 	public void loadBackground(View view, String path, long saveTime,
 			XhIDisplay display, XhImageListen listen);
 
 	/**
 	 * 
-	 * lhl 2017-11-20 ä¸‹åˆ4:19:46 è¯´æ˜ï¼šåŠ è½½èƒŒæ™¯å›¾ç‰‡
+	 * lhl 2017-11-20 ÏÂÎç4:19:46 ËµÃ÷£º¼ÓÔØ±³¾°Í¼Æ¬
 	 * 
 	 * @param view
-	 *            æ˜¾ç¤ºçš„è§†å›¾
+	 *            ÏÔÊ¾µÄÊÓÍ¼
 	 * @param path
-	 *            å›¾ç‰‡åœ°å€
+	 *            Í¼Æ¬µØÖ·
 	 * @param startImage
-	 *            å¼€å§‹åŠ è½½çš„å›¾ç‰‡
+	 *            ¿ªÊ¼¼ÓÔØµÄÍ¼Æ¬
 	 * @param failureImage
-	 *            åŠ è½½å¤±è´¥çš„å›¾ç‰‡
+	 *            ¼ÓÔØÊ§°ÜµÄÍ¼Æ¬
 	 * @param saveTime
-	 *            ç¼“å­˜æ—¶é—´
+	 *            »º´æÊ±¼ä
 	 * @param width
-	 *            å›¾ç‰‡å®½åº¦
+	 *            Í¼Æ¬¿í¶È
 	 * @param height
-	 *            å›¾ç‰‡é«˜åº¦
+	 *            Í¼Æ¬¸ß¶È
 	 * @param display
-	 *            é€‚é…å™¨ void
+	 *            ÊÊÅäÆ÷ void
 	 */
 	public void loadBackground(View view, String path, int startImage,
 			int failureImage, long saveTime, int width, int height,
