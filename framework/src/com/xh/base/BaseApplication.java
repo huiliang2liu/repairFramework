@@ -16,7 +16,9 @@ import android.content.IntentFilter;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Process;
 
 import com.xh.http.IHttpManager;
@@ -26,6 +28,11 @@ import com.xh.ifaces.IObjectDBHelper;
 import com.xh.ifaces.IOkHttpManager;
 import com.xh.image.IImageManager;
 import com.xh.image.XhImageLoadImpl;
+import com.xh.image.cache.disc.impl.UnlimitedDiskCache;
+import com.xh.image.core.DisplayImageOptions;
+import com.xh.image.core.ImageLoader;
+import com.xh.image.core.ImageLoaderConfiguration;
+import com.xh.image.core.assist.ImageScaleType;
 import com.xh.proxy.ProxyService;
 import com.xh.proxy.XhProxyActivity;
 import com.xh.recevier.SmsRecevier;
@@ -78,7 +85,32 @@ public class BaseApplication extends Application implements
 		intentFilter.setPriority(1000);
 		SmsRecevier smsRecevier = new SmsRecevier();
 		registerReceiver(smsRecevier, intentFilter);
+		imageLoaderInitialize();
 		XhLog.e(TAG, "初始化完成");
+	}
+
+	/**
+	 * 初始化图片加载器
+	 */
+	private void imageLoaderInitialize() {
+		// TODO Auto-generated method stub
+		File cacheDir = new File(Environment.getExternalStorageDirectory()
+				.getAbsolutePath() + "/" + getPackageName() + "/img");
+		DisplayImageOptions options = new DisplayImageOptions.Builder()
+				.imageScaleType(ImageScaleType.IN_SAMPLE_INT)
+				.bitmapConfig(Bitmap.Config.RGB_565)// 防止内存溢出的，图片太多就这这个。还有其他设置
+				.cacheInMemory(false) // 设置下载的图片是否缓存在内存中
+				.cacheOnDisk(true) // 设置下载的图片是否缓存在SD卡中
+				.build();
+
+		ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(
+				this).threadPriority(Thread.NORM_PRIORITY - 2)
+				.memoryCacheExtraOptions(600, 600)
+				.diskCacheExtraOptions(600, 600, null)
+				.defaultDisplayImageOptions(options) // 上面的options对象，一些属性配置
+				.diskCache(new UnlimitedDiskCache(cacheDir))// 自定义缓存路径
+				.build();
+		ImageLoader.getInstance().init(config); // 初始化
 	}
 
 	private void init() {
