@@ -5,12 +5,12 @@ import com.xh.util.XhImageUtile;
 import android.graphics.Bitmap;
 
 /**
- * @version åˆ›å»ºæ—¶é—´ï¼š2017-11-21 ä¸Šåˆ10:30:13
- * é¡¹ç›®ï¼šXhlackAD-eclipse
- * åŒ…åï¼šcom.Xhlack.tv.image.display
- * æ–‡ä»¶åï¼šXhCircleDisplay.java
- * ä½œè€…ï¼šlhl
- * è¯´æ˜:åœ†è¡Œå›¾ç‰‡é€‚é…å™¨
+ * @version ´´½¨Ê±¼ä£º2017-11-21 ÉÏÎç10:30:13
+ * ÏîÄ¿£ºXhlackAD-eclipse
+ * °üÃû£ºcom.Xhlack.tv.image.display
+ * ÎÄ¼şÃû£ºXhCircleDisplay.java
+ * ×÷Õß£ºlhl
+ * ËµÃ÷:Ô²ĞĞÍ¼Æ¬ÊÊÅäÆ÷
  */
 
 public class XhCircleDisplay extends XhScreenDisplay {
