@@ -16,13 +16,14 @@
 package com.xh.image.cache.disc.naming;
 
 /**
- * Generates names for files at disk cache
+ * Names image file as image URI {@linkplain String#hashCode() hashcode}
  *
  * @author Sergey Tarasevich (nostra13[at]gmail[dot]com)
  * @since 1.3.1
  */
-public interface FileNameGenerator {
-
-	/** Generates unique file name for image defined by URI */
-	String generate(String imageUri);
+public class HashCodeFileNameGenerator implements FileNameGenerator {
+	@Override
+	public String generate(String imageUri) {
+		return String.valueOf(imageUri.hashCode());
+	}
 }
