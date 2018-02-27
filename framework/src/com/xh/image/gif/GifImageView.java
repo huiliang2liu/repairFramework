@@ -1,5 +1,6 @@
 package com.xh.image.gif;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URL;
@@ -12,7 +13,10 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.ImageView;
 
+import com.xh.base.BaseApplication;
+import com.xh.encryption.MD5;
 import com.xh.util.StreamManage;
+import com.xh.util.XhLog;
 
 public class GifImageView extends ImageView implements Runnable {
 	private static final String TAG = "GifDecoderView";
@@ -80,34 +84,55 @@ public class GifImageView extends ImageView implements Runnable {
 		}
 	}
 
-	public void url(final URL url) {
-		new Thread(new Runnable() {
+	public synchronized void url(final URL url) {
+		final String path = url.toString();
+		final String savePath = ((BaseApplication) getContext()
+				.getApplicationContext()).getSavePath() + "/gif";
+		File file = new File(savePath);
+		if (!file.exists())
+			file.mkdirs();
+		if (path.startsWith("http") || path.startsWith("https")) {
+			final String fileName = MD5.encryptionMD5(path);
+			file = new File(savePath, fileName);
+			if (file.exists()) {
+				uri(file.toURI());
+			} else {
+				new Thread(new Runnable() {
 
-			@Override
-			public void run() {
-				// TODO Auto-generated method stub
-				try {
-					final byte[] buff = StreamManage.inputStream2byte(url
-							.openStream());
-					post(new Runnable() {
+					@Override
+					public void run() {
+						// TODO Auto-generated method stub
+						try {
+							StreamManage.inputStream2File(url.openStream(),
+									savePath, fileName);
+							post(new Runnable() {
 
-						@Override
-						public void run() {
-							// TODO Auto-generated method stub
-							try {
-								setBytes(buff);
-							} catch (Exception e) {
-								// TODO Auto-generated catch block
-								e.printStackTrace();
-							}
+								@Override
+								public void run() {
+									// TODO Auto-generated method stub
+									try {
+										uri(new File(savePath, fileName)
+												.toURI());
+									} catch (Exception e) {
+										// TODO Auto-generated catch block
+										e.printStackTrace();
+									}
+								}
+							});
+						} catch (IOException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
 						}
-					});
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+					}
+				}).start();
 			}
-		}).start();
+		} else
+			try {
+				setBytes(StreamManage.inputStream2byte(url.openStream()));
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 
 	}
 
