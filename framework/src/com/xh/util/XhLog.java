@@ -2,240 +2,245 @@ package com.xh.util;
 
 import android.util.Log;
 
+import java.lang.reflect.Method;
+
+
 /**
- * @version ´´½¨Ê±¼ä£º2017-11-14 ÏÂÎç3:52:48 ÏîÄ¿£ºTvBlackAD-eclipse
- *          °üÃû£ºcom.tvblack.tv.utils ÎÄ¼şÃû£ºTVBLog.java ×÷Õß£ºlhl ËµÃ÷:ÈÕÖ¾¿ØÖÆÀà
- */
+ * XhApplication com.xh.util
+ * 2018/4/13 10:24
+ * instructionsï¼š
+ * author:liuhuiliang  email:825378291@qq.com
+ **/
 
-public class XhLog {
-	private static final boolean IS_DEBUG = true;
-	private static String TAG = XhLog.class.getName();
+public class XhLog  {
+    private static final String FORMAT = "[TAG] : %s , [MSG] : %s";
+    private  static  boolean isDebug=false;
+    private static String TAG="XhLog";
 
-	public static void setTAG(String tAG) {
-		TAG = tAG;
-	}
+    public static void setIsDebug(boolean isDebug) {
+        XhLog.isDebug = isDebug;
+    }
 
-	// private void man() {
-	// // TODO Auto-generated method stub
-	//
-	// }
-	/**
-	 * 
-	 * lhl 2017-11-14 ÏÂÎç3:57:32 ËµÃ÷£ºÀ¶É«ÈÕÖ¾
-	 * 
-	 * @param tag
-	 * @param msg
-	 *            void
-	 */
-	public static void d(String tag, String msg) {
-		d(tag, msg, null);
-	}
-
-	/**
-	 * 
-	 * lhl 2017-11-14 ÏÂÎç4:52:36 ËµÃ÷£ºÀ¶É«ÈÕÖ¾
-	 * 
-	 * @param msg
-	 *            void
-	 */
-	public static void d(String msg) {
-		d(null, msg);
-	}
-
-	/**
-	 * 
-	 * lhl 2017-11-14 ÏÂÎç4:52:44 ËµÃ÷£ºÀ¶É«ÈÕÖ¾
-	 * 
-	 * @param tag
-	 * @param msg
-	 * @param tr
-	 *            void
-	 */
-	public static void d(String tag, String msg, Throwable tr) {
-		if (IS_DEBUG && msg != null) {
-			if (tag == null)
-				tag = TAG;
-			if (tr == null) {
-				Log.d(tag, msg);
-			} else {
-				Log.d(tag, msg, tr);
-			}
-		}
-	}
-
-	/**
-	 * 
-	 * lhl 2017-11-14 ÏÂÎç4:56:28 ËµÃ÷£ººìÉ«ÈÕÖ¾
-	 * 
-	 * @param msg
-	 *            void
-	 */
-	public static void e(String msg) {
-		e(TAG, msg);
-	}
-
-	/**
-	 * 
-	 * lhl 2017-11-14 ÏÂÎç4:56:42 ËµÃ÷£ººìÉ«ÈÕÖ¾
-	 * 
-	 * @param tag
-	 * @param msg
-	 *            void
-	 */
-	public static void e(String tag, String msg) {
-		e(tag, msg, null);
-	}
-
-	/**
-	 * 
-	 * lhl 2017-11-14 ÏÂÎç4:56:47 ËµÃ÷£ººìÉ«ÈÕÖ¾
-	 * 
-	 * @param tag
-	 * @param msg
-	 * @param tr
-	 *            void
-	 */
-	public static void e(String tag, String msg, Throwable tr) {
-		if (IS_DEBUG && msg != null) {
-			if (tag == null)
-				tag = TAG;
-			if (tr == null) {
-				Log.e(tag, msg);
-			} else {
-				Log.e(tag, msg, tr);
-			}
-		}
-	}
-
-	/**
-	 * 
-	 * lhl 2017-11-14 ÏÂÎç4:59:16 ËµÃ÷£ºÂÌÉ«ÈÕÖ¾
-	 * 
-	 * @param msg
-	 *            void
-	 */
-	public static void i(String msg) {
-		i(TAG, msg);
-	}
-
-	/**
-	 * 
-	 * lhl 2017-11-14 ÏÂÎç4:59:33 ËµÃ÷£ºÂÌÉ«ÈÕÖ¾
-	 * 
-	 * @param tag
-	 * @param msg
-	 *            void
-	 */
-	public static void i(String tag, String msg) {
-		i(tag, msg, null);
-	}
-
-	/**
-	 * 
-	 * lhl 2017-11-14 ÏÂÎç4:59:39 ËµÃ÷£ºÂÌÉ«ÈÕÖ¾
-	 * 
-	 * @param tag
-	 * @param msg
-	 * @param tr
-	 *            void
-	 */
-	public static void i(String tag, String msg, Throwable tr) {
-		if (IS_DEBUG && msg != null) {
-			if (tag == null)
-				tag = TAG;
-			if (tr == null) {
-				Log.i(tag, msg);
-			} else {
-				Log.i(tag, msg, tr);
-			}
-		}
-	}
-
-	/**
-	 * 
-	 * lhl 2017-11-14 ÏÂÎç5:02:02 ËµÃ÷£ººÚÉ«ÈÕÖ¾
-	 * 
-	 * @param msg
-	 *            void
-	 */
-	public static void v(String msg) {
-		v(TAG, msg);
-	}
-
-	/**
-	 * 
-	 * lhl 2017-11-14 ÏÂÎç5:02:13 ËµÃ÷£ººÚÉ«ÈÕÖ¾
-	 * 
-	 * @param tag
-	 * @param msg
-	 *            void
-	 */
-	public static void v(String tag, String msg) {
-		v(tag, msg, null);
-	}
-
-	/**
-	 * 
-	 * lhl 2017-11-14 ÏÂÎç5:02:19 ËµÃ÷£ººÚÉ«ÈÕÖ¾
-	 * 
-	 * @param tag
-	 * @param msg
-	 * @param tr
-	 *            void
-	 */
-	public static void v(String tag, String msg, Throwable tr) {
-		if (IS_DEBUG && msg != null) {
-			if (tag == null)
-				tag = TAG;
-			if (tr == null) {
-				Log.v(tag, msg);
-			} else {
-				Log.v(tag, msg, tr);
-			}
-		}
-	}
-
-	/**
-	 * 
-	 * lhl 2017-11-14 ÏÂÎç5:04:14 ËµÃ÷£º³ÈÉ«ÈÕÖ¾
-	 * 
-	 * @param msg
-	 *            void
-	 */
-	public static void w(String msg) {
-		w(TAG, msg);
-	}
-
-	/**
-	 * 
-	 * lhl 2017-11-14 ÏÂÎç5:04:25 ËµÃ÷£º³ÈÉ«ÈÕÖ¾
-	 * 
-	 * @param tag
-	 * @param msg
-	 *            void
-	 */
-	public static void w(String tag, String msg) {
-		w(tag, msg, null);
-	}
-
-	/**
-	 * 
-	 * lhl 2017-11-14 ÏÂÎç5:04:30 ËµÃ÷£º³ÈÉ«ÈÕÖ¾
-	 * 
-	 * @param tag
-	 * @param msg
-	 * @param tr
-	 *            void
-	 */
-	public static void w(String tag, String msg, Throwable tr) {
-		if (IS_DEBUG && msg != null) {
-			if (tag == null)
-				tag = TAG;
-			if (tr == null) {
-				Log.w(tag, msg);
-			} else {
-				Log.w(tag, msg, tr);
-			}
-		}
-	}
+    /**
+     * 2018/4/13 10:35
+     * annotationï¼šå°†tagå’Œmsgæ ¼å¼åŒ–
+     * authorï¼šliuhuiliang
+     * email ï¼š825378291@qq.com
+     *
+     *
+     */
+    private  static  String buildMsg(String tag,String msg){
+        return  String.format(FORMAT,tag,msg);
+    }
+    /**
+     * 2018/4/13 10:36
+     * annotationï¼šè®¾ç½®tagæ ‡å¿—
+     * authorï¼šliuhuiliang
+     * email ï¼š825378291@qq.com
+     *
+     *
+     */
+    public static void setTAG(String TAG) {
+        XhLog.TAG = TAG;
+    }
+    /**
+     * 2018/4/13 10:48
+     * annotationï¼šè“è‰²æ—¥å¿—
+     * authorï¼šliuhuiliang
+     * email ï¼š825378291@qq.com
+     *
+     *
+     */
+    public  static  void d(String msg){
+    d(null,msg);
+    }
+    /**
+     * 2018/4/13 10:49
+     * annotationï¼šè“è‰²æ—¥å¿—
+     * authorï¼šliuhuiliang
+     * email ï¼š825378291@qq.com
+     *
+     *
+     */
+    public  static void d(String tag,String msg){
+    d(tag,msg,null);
+    }
+    /**
+     * 2018/4/13 10:49
+     * annotationï¼šè“è‰²æ—¥å¿—
+     * authorï¼šliuhuiliang
+     * email ï¼š825378291@qq.com
+     *
+     *
+     */
+    public  static  void d(String tag,String msg,Throwable er){
+        log("d",tag,msg,er);
+    }
+    /**
+     * 2018/4/13 10:53
+     * annotationï¼šçº¢è‰²æ—¥å¿—
+     * authorï¼šliuhuiliang
+     * email ï¼š825378291@qq.com
+     *
+     *
+     */
+    public  static  void e(String msg){
+    e(null,msg);
+    }
+    /**
+     * 2018/4/13 10:53
+     * annotationï¼šçº¢è‰²æ—¥å¿—
+     * authorï¼šliuhuiliang
+     * email ï¼š825378291@qq.com
+     *
+     *
+     */
+    public  static  void e(String tag,String msg){
+   e(tag,msg,null);
+    }
+    /**
+     * 2018/4/13 10:53
+     * annotationï¼šçº¢è‰²æ—¥å¿—
+     * authorï¼šliuhuiliang
+     * email ï¼š825378291@qq.com
+     *
+     *
+     */
+    public  static  void e(String tag,String msg,Throwable tr){
+        log("e",tag,msg,tr);
+    }
+    /**
+     * 2018/4/13 10:56
+     * annotationï¼šç»¿è‰²æ—¥å¿—
+     * authorï¼šliuhuiliang
+     * email ï¼š825378291@qq.com
+     *
+     *
+     */
+    public  static  void i(String msg){
+i(null,msg);
+    }
+    /**
+     * 2018/4/13 10:56
+     * annotationï¼šç»¿è‰²æ—¥å¿—
+     * authorï¼šliuhuiliang
+     * email ï¼š825378291@qq.com
+     *
+     *
+     */
+    public  static  void i(String tag,String  msg){
+i(tag,msg,null);
+    }
+    /**
+     * 2018/4/13 10:56
+     * annotationï¼šç»¿è‰²æ—¥å¿—
+     * authorï¼šliuhuiliang
+     * email ï¼š825378291@qq.com
+     *
+     *
+     */
+    public  static  void i(String tag,String  msg,Throwable tr){
+        log("i",tag,msg,tr);
+    }
+    /**
+     * 2018/4/13 10:58
+     * annotationï¼šé»‘è‰²æ—¥å¿—
+     * authorï¼šliuhuiliang
+     * email ï¼š825378291@qq.com
+     *
+     *
+     */
+    public  static  void v(String msg){
+        v(null,msg);
+    }
+    /**
+     * 2018/4/13 10:58
+     * annotationï¼šé»‘è‰²æ—¥å¿—
+     * authorï¼šliuhuiliang
+     * email ï¼š825378291@qq.com
+     *
+     *
+     */
+    public  static  void v(String tag,String msg){
+        v(tag,msg,null);
+    }
+    /**
+     * 2018/4/13 10:58
+     * annotationï¼šé»‘è‰²æ—¥å¿—
+     * authorï¼šliuhuiliang
+     * email ï¼š825378291@qq.com
+     *
+     *
+     */
+    public  static  void v(String tag,String msg,Throwable tr){
+        log("v",tag,msg,tr);
+    }
+    /**
+     * 2018/4/13 11:00
+     * annotationï¼šæ©™è‰²æ—¥å¿—
+     * authorï¼šliuhuiliang
+     * email ï¼š825378291@qq.com
+     *
+     *
+     */
+    public  static  void w(String msg){
+        w(null,msg);
+    }
+    /**
+     * 2018/4/13 11:00
+     * annotationï¼šæ©™è‰²æ—¥å¿—
+     * authorï¼šliuhuiliang
+     * email ï¼š825378291@qq.com
+     *
+     *
+     */
+    public  static  void w(String tag,String msg){
+        w(tag,msg,null);
+    }
+    /**
+     * 2018/4/13 11:00
+     * annotationï¼šæ©™è‰²æ—¥å¿—
+     * authorï¼šliuhuiliang
+     * email ï¼š825378291@qq.com
+     *
+     *
+     */
+    public  static  void w(String tag,String msg,Throwable tr){
+        log("w",tag,msg,tr);
+    }
+    /**
+     * 2018/4/13 10:53
+     * annotationï¼šè¾“å‡ºæ—¥å¿—
+     * authorï¼šliuhuiliang
+     * email ï¼š825378291@qq.com
+     *
+     *
+     */
+   private  static  void log(String methodName,String tag,String msg,Throwable er){
+       if(!isDebug)
+           return;
+       if(msg==null||msg.isEmpty())
+           return;
+       if(tag==null||msg.isEmpty())
+           tag="null";
+       msg=buildMsg(tag,msg);
+     Class cls=Log.class;
+       Class [] types;
+       Object[] values;
+       if(er==null){
+           types=new Class[]{String.class,String.class};
+           values=new Object[]{TAG,msg};
+       }else{
+           types=new Class[]{String.class,String.class,Throwable.class};
+           values=new Object[]{TAG,msg,er};
+       }
+      try {
+          Method method=cls.getDeclaredMethod(methodName,types);
+          if(!method.isAccessible())
+              method.setAccessible(true);
+          method.invoke(null, values);
+      }catch (Exception ex){
+          ex.printStackTrace();
+      }
+   }
 }
