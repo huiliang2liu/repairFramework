@@ -16,7 +16,14 @@ public class XhLog  {
     private static final String FORMAT = "[TAG] : %s , [MSG] : %s";
     private  static  boolean isDebug=false;
     private static String TAG="XhLog";
-
+/**
+     * 2018/4/13 10:35
+     * annotation：设置模式
+     * author：liuhuiliang
+     * email ：825378291@qq.com
+     *
+     *
+     */
     public static void setIsDebug(boolean isDebug) {
         XhLog.isDebug = isDebug;
     }
