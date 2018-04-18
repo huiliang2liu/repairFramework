@@ -19,7 +19,8 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
-
+import android.content.pm.Signature;
+import android.util.Base64;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
@@ -31,14 +32,14 @@ import android.net.Uri;
 import android.util.DisplayMetrics;
 
 /**
- * @version ´´½¨Ê±¼ä£º2018-1-3 ÉÏÎç9:41:58 ÏîÄ¿£ºrepair °üÃû£ºcom.xh.util ÎÄ¼şÃû£ºApkUtil.java
- *          ×÷Õß£ºlhl ËµÃ÷:
+ * @version åˆ›å»ºæ—¶é—´ï¼š2018-1-3 ä¸Šåˆ9:41:58 é¡¹ç›®ï¼šrepair åŒ…åï¼šcom.xh.util æ–‡ä»¶åï¼šApkUtil.java
+ *          ä½œè€…ï¼šlhl è¯´æ˜:
  */
 
 public class ApkUtil {
 	/**
 	 * 
-	 * lhl 2018-1-3 ÉÏÎç9:42:57 ËµÃ÷£º»ñÈ¡apkÇ©Ãû
+	 * lhl 2018-1-3 ä¸Šåˆ9:42:57 è¯´æ˜ï¼šè·å–apkç­¾å
 	 * 
 	 * @param apkPath
 	 * @return String
@@ -46,9 +47,9 @@ public class ApkUtil {
 	public static String showUninstallAPKSignatures(String apkPath) {
 		String PATH_PackageParser = "android.content.pm.PackageParser";
 		try {
-			// apk°üµÄÎÄ¼şÂ·¾¶
-			// ÕâÊÇÒ»¸öPackage ½âÊÍÆ÷, ÊÇÒş²ØµÄ
-			// ¹¹Ôìº¯ÊıµÄ²ÎÊıÖ»ÓĞÒ»¸ö, apkÎÄ¼şµÄÂ·¾¶
+			// apkåŒ…çš„æ–‡ä»¶è·¯å¾„
+			// è¿™æ˜¯ä¸€ä¸ªPackage è§£é‡Šå™¨, æ˜¯éšè—çš„
+			// æ„é€ å‡½æ•°çš„å‚æ•°åªæœ‰ä¸€ä¸ª, apkæ–‡ä»¶çš„è·¯å¾„
 			// PackageParser packageParser = new PackageParser(apkPath);
 			Class pkgParserCls = Class.forName(PATH_PackageParser);
 			Class[] typeArgs = new Class[1];
@@ -57,7 +58,7 @@ public class ApkUtil {
 			Object[] valueArgs = new Object[1];
 			valueArgs[0] = apkPath;
 			Object pkgParser = pkgParserCt.newInstance(valueArgs);
-			// Õâ¸öÊÇÓëÏÔÊ¾ÓĞ¹ØµÄ, ÀïÃæÉæ¼°µ½Ò»Ğ©ÏñËØÏÔÊ¾µÈµÈ, ÎÒÃÇÊ¹ÓÃÄ¬ÈÏµÄÇé¿ö
+			// è¿™ä¸ªæ˜¯ä¸æ˜¾ç¤ºæœ‰å…³çš„, é‡Œé¢æ¶‰åŠåˆ°ä¸€äº›åƒç´ æ˜¾ç¤ºç­‰ç­‰, æˆ‘ä»¬ä½¿ç”¨é»˜è®¤çš„æƒ…å†µ
 			DisplayMetrics metrics = new DisplayMetrics();
 			metrics.setToDefaults();
 			// PackageParser.Package mPkgInfo = packageParser.parsePackage(new
@@ -87,7 +88,7 @@ public class ApkUtil {
 			valueArgs[0] = pkgParserPkg;
 			valueArgs[1] = PackageManager.GET_SIGNATURES;
 			pkgParser_collectCertificatesMtd.invoke(pkgParser, valueArgs);
-			// Ó¦ÓÃ³ÌĞòĞÅÏ¢°ü, Õâ¸ö¹«¿ªµÄ, ²»¹ıÓĞĞ©º¯Êı, ±äÁ¿Ã»¹«¿ª
+			// åº”ç”¨ç¨‹åºä¿¡æ¯åŒ…, è¿™ä¸ªå…¬å¼€çš„, ä¸è¿‡æœ‰äº›å‡½æ•°, å˜é‡æ²¡å…¬å¼€
 			Field packageInfoFld = pkgParserPkg.getClass().getDeclaredField(
 					"mSignatures");
 			Signature[] info = (Signature[]) packageInfoFld.get(pkgParserPkg);
@@ -99,7 +100,7 @@ public class ApkUtil {
 	}
 
 	/**
-	 * »ñÈ¡app SHA1
+	 * è·å–app SHA1
 	 * 
 	 * @param context
 	 * @return
@@ -132,7 +133,7 @@ public class ApkUtil {
 
 	/**
 	 * 
-	 * lhl 2018-1-3 ÉÏÎç9:46:36 ËµÃ÷£º»ñÈ¡Ç©Ãû
+	 * lhl 2018-1-3 ä¸Šåˆ9:46:36 è¯´æ˜ï¼šè·å–ç­¾å
 	 * 
 	 * @param context
 	 * @return String
@@ -143,7 +144,7 @@ public class ApkUtil {
 
 	/**
 	 * 
-	 * lhl 2018-1-3 ÉÏÎç9:50:12 ËµÃ÷£º»ñÈ¡Ö¸¶¨±¨ÃûµÄÇ©Ãû
+	 * lhl 2018-1-3 ä¸Šåˆ9:50:12 è¯´æ˜ï¼šè·å–æŒ‡å®šæŠ¥åçš„ç­¾å
 	 * 
 	 * @param context
 	 * @param packageName
@@ -159,10 +160,33 @@ public class ApkUtil {
 		}
 		return null;
 	}
+/**
+	 * 
+	 * lhl 2018-1-3 ä¸Šåˆ9:50:12 è¯´æ˜ï¼šè·å–æŒ‡å®šæŠ¥åçš„ç­¾å
+	 * 
+	 * @param context
+	 * @param packageName
+	 * @return String
+	 */
+	public static String getHash(Context context, String packageName) {
+		try {
+			PackageInfo info = context.getPackageManager().getPackageInfo(
+					packageName, PackageManager.GET_SIGNATURES);
+			for (Signature signature : info.signatures) {
+				MessageDigest md = MessageDigest.getInstance("SHA");
+				md.update(signature.toByteArray());
+				return Base64.encodeToString(md.digest(), Base64.DEFAULT);
+			}
+		} catch (NameNotFoundException e) {
 
+		} catch (NoSuchAlgorithmException e) {
+
+		}
+		return null;
+	}
 	/**
 	 * 
-	 * lhl 2018-1-3 ÉÏÎç9:51:46 ËµÃ÷£º
+	 * lhl 2018-1-3 ä¸Šåˆ9:51:46 è¯´æ˜ï¼š
 	 * 
 	 * @param sign
 	 * @return Map<String,String>
@@ -186,7 +210,7 @@ public class ApkUtil {
 		}
 		return null;
 	}
-	/** °²×°Ò»¸öapkÎÄ¼ş */
+	/** å®‰è£…ä¸€ä¸ªapkæ–‡ä»¶ */
     public static void install(Context context, File uriFile) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setDataAndType(Uri.fromFile(uriFile), "application/vnd.android.package-archive");
@@ -194,57 +218,57 @@ public class ApkUtil {
         context.startActivity(intent);
     }
 
-    /** Ğ¶ÔØÒ»¸öapp */
+    /** å¸è½½ä¸€ä¸ªapp */
     public static void uninstall(Context context, String packageName) {
-        //Í¨¹ı³ÌĞòµÄ°üÃû´´½¨URI
+        //é€šè¿‡ç¨‹åºçš„åŒ…ååˆ›å»ºURI
         Uri packageURI = Uri.parse("package:" + packageName);
-        //´´½¨IntentÒâÍ¼
+        //åˆ›å»ºIntentæ„å›¾
         Intent intent = new Intent(Intent.ACTION_DELETE, packageURI);
-        //Ö´ĞĞĞ¶ÔØ³ÌĞò
+        //æ‰§è¡Œå¸è½½ç¨‹åº
         context.startActivity(intent);
     }
 
-    /** ¼ì²éÊÖ»úÉÏÊÇ·ñ°²×°ÁËÖ¸¶¨µÄÈí¼ş */
+    /** æ£€æŸ¥æ‰‹æœºä¸Šæ˜¯å¦å®‰è£…äº†æŒ‡å®šçš„è½¯ä»¶ */
     public static boolean isAvailable(Context context, String packageName) {
-        // »ñÈ¡packagemanager
+        // è·å–packagemanager
         final PackageManager packageManager = context.getPackageManager();
-        // »ñÈ¡ËùÓĞÒÑ°²×°³ÌĞòµÄ°üĞÅÏ¢
+        // è·å–æ‰€æœ‰å·²å®‰è£…ç¨‹åºçš„åŒ…ä¿¡æ¯
         List<PackageInfo> packageInfos = packageManager.getInstalledPackages(0);
-        // ÓÃÓÚ´æ´¢ËùÓĞÒÑ°²×°³ÌĞòµÄ°üÃû
+        // ç”¨äºå­˜å‚¨æ‰€æœ‰å·²å®‰è£…ç¨‹åºçš„åŒ…å
         List<String> packageNames = new ArrayList<>();
-        // ´ÓpinfoÖĞ½«°üÃû×ÖÖğÒ»È¡³ö£¬Ñ¹ÈëpName listÖĞ
+        // ä»pinfoä¸­å°†åŒ…åå­—é€ä¸€å–å‡ºï¼Œå‹å…¥pName listä¸­
         if (packageInfos != null) {
             for (int i = 0; i < packageInfos.size(); i++) {
                 String packName = packageInfos.get(i).packageName;
                 packageNames.add(packName);
             }
         }
-        // ÅĞ¶ÏpackageNamesÖĞÊÇ·ñÓĞÄ¿±ê³ÌĞòµÄ°üÃû£¬ÓĞTRUE£¬Ã»ÓĞFALSE
+        // åˆ¤æ–­packageNamesä¸­æ˜¯å¦æœ‰ç›®æ ‡ç¨‹åºçš„åŒ…åï¼Œæœ‰TRUEï¼Œæ²¡æœ‰FALSE
         return packageNames.contains(packageName);
     }
 
-    /** ¼ì²éÊÖ»úÉÏÊÇ·ñ°²×°ÁËÖ¸¶¨µÄÈí¼ş */
+    /** æ£€æŸ¥æ‰‹æœºä¸Šæ˜¯å¦å®‰è£…äº†æŒ‡å®šçš„è½¯ä»¶ */
     public static boolean isAvailable(Context context, File file) {
         return isAvailable(context, getPackageName(context, file.getAbsolutePath()));
     }
 
-    /** ¸ù¾İÎÄ¼şÂ·¾¶»ñÈ¡°üÃû */
+    /** æ ¹æ®æ–‡ä»¶è·¯å¾„è·å–åŒ…å */
     public static String getPackageName(Context context, String filePath) {
         PackageManager packageManager = context.getPackageManager();
         PackageInfo info = packageManager.getPackageArchiveInfo(filePath, PackageManager.GET_ACTIVITIES);
         if (info != null) {
             ApplicationInfo appInfo = info.applicationInfo;
-            return appInfo.packageName;  //µÃµ½°²×°°üÃû³Æ
+            return appInfo.packageName;  //å¾—åˆ°å®‰è£…åŒ…åç§°
         }
         return null;
     }
 
-    /** ´ÓapkÖĞ»ñÈ¡°æ±¾ĞÅÏ¢ */
+    /** ä»apkä¸­è·å–ç‰ˆæœ¬ä¿¡æ¯ */
     public static String getChannelFromApk(Context context, String channelPrefix) {
-        //´Óapk°üÖĞ»ñÈ¡
+        //ä»apkåŒ…ä¸­è·å–
         ApplicationInfo appinfo = context.getApplicationInfo();
         String sourceDir = appinfo.sourceDir;
-        //Ä¬ÈÏ·ÅÔÚmeta-inf/Àï£¬ ËùÒÔĞèÒªÔÙÆ´½ÓÒ»ÏÂ
+        //é»˜è®¤æ”¾åœ¨meta-inf/é‡Œï¼Œ æ‰€ä»¥éœ€è¦å†æ‹¼æ¥ä¸€ä¸‹
         String key = "META-INF/" + channelPrefix;
         String ret = "";
         ZipFile zipfile = null;
