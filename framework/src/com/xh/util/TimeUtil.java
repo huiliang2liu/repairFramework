@@ -9,7 +9,7 @@ import java.util.Locale;
 import java.util.Random;
 
 /**
- * ÏµÍ³Ê±¼ä
+ * ç³»ç»Ÿæ—¶é—´
  * 
  */
 public class TimeUtil {
@@ -17,7 +17,7 @@ public class TimeUtil {
 	public static final int format1 = 0, format2 = 1, format3 = 3, format4 = 4;
 
 	/**
-	 * »ñÈ¡ÏµÍ³Ê±¼äµ½ÈÕ 20160607
+	 * èŽ·å–ç³»ç»Ÿæ—¶é—´åˆ°æ—¥ 20160607
 	 * 
 	 * @return
 	 */
@@ -27,7 +27,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñÈ¡ÏµÍ³Ê±¼äµ½ÈÕ 2016-06-07
+	 * èŽ·å–ç³»ç»Ÿæ—¶é—´åˆ°æ—¥ 2016-06-07
 	 * 
 	 * @param date
 	 * @return
@@ -39,7 +39,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñÈ¡ÏµÍ³Ê±¼äµ½ÈÕ 2016/06/07
+	 * èŽ·å–ç³»ç»Ÿæ—¶é—´åˆ°æ—¥ 2016/06/07
 	 * 
 	 * @param date
 	 * @return
@@ -51,7 +51,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñÈ¡ÏµÍ³Ê±¼äµ½ÈÕ 20160607
+	 * èŽ·å–ç³»ç»Ÿæ—¶é—´åˆ°æ—¥ 20160607
 	 * 
 	 * @return
 	 */
@@ -61,7 +61,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñÈ¡ÏµÍ³Ê±¼äµ½ÈÕ 2016-06-07
+	 * èŽ·å–ç³»ç»Ÿæ—¶é—´åˆ°æ—¥ 2016-06-07
 	 * 
 	 * @return
 	 */
@@ -71,7 +71,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñÈ¡ÏµÍ³Ê±¼äµ½ÈÕ 2016/06/07
+	 * èŽ·å–ç³»ç»Ÿæ—¶é—´åˆ°æ—¥ 2016/06/07
 	 * 
 	 * @return
 	 */
@@ -81,7 +81,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñÈ¡ÏµÍ³Ê±¼äµ½Ãë 20160607135436
+	 * èŽ·å–ç³»ç»Ÿæ—¶é—´åˆ°ç§’ 20160607135436
 	 * 
 	 * @return
 	 */
@@ -92,7 +92,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñÈ¡ÏµÍ³Ê±¼äµ½Ãë 2016-06-07 13:54:36
+	 * èŽ·å–ç³»ç»Ÿæ—¶é—´åˆ°ç§’ 2016-06-07 13:54:36
 	 * 
 	 * @return
 	 */
@@ -102,7 +102,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñÈ¡ÏµÍ³Ê±¼äµ½Ãë 2016/06/07 13:54:36
+	 * èŽ·å–ç³»ç»Ÿæ—¶é—´åˆ°ç§’ 2016/06/07 13:54:36
 	 * 
 	 * @return
 	 */
@@ -112,7 +112,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñÈ¡ÏµÍ³Ê±¼äµ½Ãë 20160607 13:54:36
+	 * èŽ·å–ç³»ç»Ÿæ—¶é—´åˆ°ç§’ 20160607 13:54:36
 	 * 
 	 * @return
 	 */
@@ -121,7 +121,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñÈ¡ÏµÍ³Ê±¼äµ½Ãë 20160607135436
+	 * èŽ·å–ç³»ç»Ÿæ—¶é—´åˆ°ç§’ 20160607135436
 	 * 
 	 * @return
 	 */
@@ -131,7 +131,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñÈ¡ÏµÍ³Ê±¼äµ½Ãë 2016-06-07 13:54:36
+	 * èŽ·å–ç³»ç»Ÿæ—¶é—´åˆ°ç§’ 2016-06-07 13:54:36
 	 * 
 	 * @return
 	 */
@@ -141,7 +141,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñÈ¡ÏµÍ³Ê±¼äµ½Ãë 2016/06/07 13:54:36
+	 * èŽ·å–ç³»ç»Ÿæ—¶é—´åˆ°ç§’ 2016/06/07 13:54:36
 	 * 
 	 * @return
 	 */
@@ -151,7 +151,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñÈ¡ÏµÍ³Ê±¼äµ½Ãë 20160607 13:54:36
+	 * èŽ·å–ç³»ç»Ÿæ—¶é—´åˆ°ç§’ 20160607 13:54:36
 	 * 
 	 * @return
 	 */
@@ -161,44 +161,44 @@ public class TimeUtil {
 	}
 
 	/**
-	 * ½«Ê±¼ä×ª»¯ÎªÐÇ×ù
+	 * å°†æ—¶é—´è½¬åŒ–ä¸ºæ˜Ÿåº§
 	 * 
 	 * @param month
-	 *            ÔÂ
+	 *            æœˆ
 	 * @param day
-	 *            ÈÕ
+	 *            æ—¥
 	 * @return
 	 */
 	public static String time_to_constellation(int month, int day) {
 		if ((month == 3 && day >= 21) || (month == 4 && day <= 19))
-			return "°×Ñò×ù";
+			return "ç™½ç¾Šåº§";
 		if ((month == 4 && day >= 20) || (month == 5 && day <= 20))
-			return "½ðÅ£×ù";
+			return "é‡‘ç‰›åº§";
 		if ((month == 5 && day >= 21) || (month == 6 && day <= 21))
-			return "Ë«×Ó×ù";
+			return "åŒå­åº§";
 		if ((month == 6 && day >= 22) || (month == 7 && day <= 22))
-			return "¾ÞÐ·×ù";
+			return "å·¨èŸ¹åº§";
 		if ((month == 7 && day >= 23) || (month == 8 && day <= 22))
-			return "Ê¨×Ó×ù";
+			return "ç‹®å­åº§";
 		if ((month == 8 && day >= 23) || (month == 9 && day <= 22))
-			return "´¦Å®×ù";
+			return "å¤„å¥³åº§";
 		if ((month == 9 && day >= 23) || (month == 10 && day <= 23))
-			return "Ìì³Ó×ù";
+			return "å¤©ç§¤åº§";
 		if ((month == 10 && day >= 24) || (month == 11 && day <= 22))
-			return "ÌìÐ«×ù";
+			return "å¤©èŽåº§";
 		if ((month == 11 && day >= 23) || (month == 12 && day <= 21))
-			return "ÉäÊÖ×ù";
+			return "å°„æ‰‹åº§";
 		if ((month == 12 && day >= 22) || (month == 1 && day <= 19))
-			return "Ä¦ôÉ×ù";
+			return "æ‘©ç¾¯åº§";
 		if ((month == 1 && day >= 20) || (month == 2 && day <= 18))
-			return "Ë®Æ¿×ù";
-		return "Ë«Óã×ù";
+			return "æ°´ç“¶åº§";
+		return "åŒé±¼åº§";
 	}
 
 	/**
 	 * 
 	 * @param year
-	 *            ÅÐ¶ÏÈòÄê
+	 *            åˆ¤æ–­é—°å¹´
 	 */
 	public static boolean leap_year(int year) {
 		if (year % 100 == 0) {
@@ -213,7 +213,7 @@ public class TimeUtil {
 	 * 
 	 * @param month
 	 * @param year
-	 *            »ñµÃÄ³ÄêÄ³ÔÂµÄÌìÊý
+	 *            èŽ·å¾—æŸå¹´æŸæœˆçš„å¤©æ•°
 	 */
 	public static int month_day(int month, int year) {
 		switch (month) {
@@ -232,7 +232,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * ½«Ê±¼ä×ª»¯ÎªÊ±¼ä´Á Ê±¼ä¸ñÊ½Îª yyyy-MM-dd HH:mm:ss
+	 * å°†æ—¶é—´è½¬åŒ–ä¸ºæ—¶é—´æˆ³ æ—¶é—´æ ¼å¼ä¸º yyyy-MM-dd HH:mm:ss
 	 * 
 	 * @param time
 	 * @return
@@ -252,7 +252,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * ½«Ê±¼ä×ª»¯ÎªÊ±¼ä´Á Ê±¼ä¸ñÊ½Îª yyyyÄêMMÔÂddÈÕ HH:mm:ss
+	 * å°†æ—¶é—´è½¬åŒ–ä¸ºæ—¶é—´æˆ³ æ—¶é—´æ ¼å¼ä¸º yyyyå¹´MMæœˆddæ—¥ HH:mm:ss
 	 * 
 	 * @param time
 	 * @return
@@ -261,7 +261,7 @@ public class TimeUtil {
 		long mill = 0l;
 		try {
 			SimpleDateFormat simpleDateFormat = new SimpleDateFormat(
-					"yyyyÄêMMÔÂddÈÕ HH:mm:ss");
+					"yyyyå¹´MMæœˆddæ—¥ HH:mm:ss");
 			Date date = simpleDateFormat.parse(time);
 			mill = date.getTime();
 		} catch (Exception e) {
@@ -272,7 +272,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * ½«Ê±¼ä×ª»¯ÎªÊ±¼ä´Á Ê±¼ä¸ñÊ½Îª yyyy/MM/dd hh:mm:ss
+	 * å°†æ—¶é—´è½¬åŒ–ä¸ºæ—¶é—´æˆ³ æ—¶é—´æ ¼å¼ä¸º yyyy/MM/dd hh:mm:ss
 	 * 
 	 * @param time
 	 * @return
@@ -292,7 +292,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * ±È½ÏÁ½¸öÊ±¼äµÄ´óÐ¡ ¸ñÊ½ 2016-03-06 »ò 2016-03-06 09:51:40
+	 * æ¯”è¾ƒä¸¤ä¸ªæ—¶é—´çš„å¤§å° æ ¼å¼ 2016-03-06 æˆ– 2016-03-06 09:51:40
 	 * 
 	 * @param time1
 	 * @param time2
@@ -307,7 +307,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * Ê±¼äÅÅÐò ¸ñÊ½2016-03-06 »ò 2016-03-06 09:51:40
+	 * æ—¶é—´æŽ’åº æ ¼å¼2016-03-06 æˆ– 2016-03-06 09:51:40
 	 * 
 	 * @return
 	 */
@@ -328,15 +328,15 @@ public class TimeUtil {
 	}
 
 	/**
-	 * ×ª»¯ÎªÉúÐ¤
+	 * è½¬åŒ–ä¸ºç”Ÿè‚–
 	 * 
 	 * @param year
 	 * @return
 	 */
 	public static String chinese_zodiac(int year) {
 
-		String[] shengxiaos = { "Êó", "Å£", "»¢", "Ãâ", "Áú", "Éß", "Âí", "Ñò", "ºï",
-				"¼¦", "¹·", "Öí" };
+		String[] shengxiaos = { "é¼ ", "ç‰›", "è™Ž", "å…", "é¾™", "è›‡", "é©¬", "ç¾Š", "çŒ´",
+				"é¸¡", "ç‹—", "çŒª" };
 		String shengxiao;
 		int m = Math.abs(year - 2008) % 12;
 		if (year >= 2008) {
@@ -351,7 +351,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * Ê±¼ä´Á×ª»¯ÎªÊ±¼ä
+	 * æ—¶é—´æˆ³è½¬åŒ–ä¸ºæ—¶é—´
 	 * 
 	 * @param mill
 	 * @return
@@ -370,7 +370,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * Ê±¼ä×ª»¯ÎªÊ±¼ä´Á
+	 * æ—¶é—´è½¬åŒ–ä¸ºæ—¶é—´æˆ³
 	 * 
 	 * @param date
 	 * @return
@@ -382,10 +382,10 @@ public class TimeUtil {
 	}
 
 	/**
-	 * ½«Ê±¼äÆ½ÒÆ¶àÉÙºÁÃë
+	 * å°†æ—¶é—´å¹³ç§»å¤šå°‘æ¯«ç§’
 	 * 
 	 * @param date
-	 *            ±»Æ½ÒÆµÄÊ±¼ä
+	 *            è¢«å¹³ç§»çš„æ—¶é—´
 	 * @param mill
 	 * 
 	 * @return
@@ -395,51 +395,51 @@ public class TimeUtil {
 	}
 
 	/**
-	 * ½«Ê±¼äÆ½ÒÆ¶àÉÙÌì
+	 * å°†æ—¶é—´å¹³ç§»å¤šå°‘å¤©
 	 * 
 	 * @param date
 	 * @param day
 	 * @return
 	 */
 	public static Date date_translation_day(Date date, int day) {
-		return date_translation_mill(date, day * 24l * 60 * 60 * 1000);
+		return date_translation_mill(date, day * 24 * 60 * 60 * 1000);
 	}
 
 	/**
-	 * ½«Ê±¼äÆ½ÒÆ¶àÉÙÐ¡Ê±
+	 * å°†æ—¶é—´å¹³ç§»å¤šå°‘å°æ—¶
 	 * 
 	 * @param date
 	 * @param hour
 	 * @return
 	 */
 	public static Date date_translation_hour(Date date, int hour) {
-		return date_translation_mill(date, hour * 60l * 60 * 1000);
+		return date_translation_mill(date, hour * 60 * 60 * 1000);
 	}
 
 	/**
-	 * ½«Ê±¼äÆ½ÒÆ¶àÉÙ·ÖÖÓ
+	 * å°†æ—¶é—´å¹³ç§»å¤šå°‘åˆ†é’Ÿ
 	 * 
 	 * @param date
 	 * @param minute
 	 * @return
 	 */
 	public static Date date_translation_minute(Date date, int minute) {
-		return date_translation_mill(date, minute * 60l * 1000);
+		return date_translation_mill(date, minute * 60 * 1000);
 	}
 
 	/**
-	 * ½«Ê±¼äÆ½ÒÆ¶àÉÙÃë
+	 * å°†æ—¶é—´å¹³ç§»å¤šå°‘ç§’
 	 * 
 	 * @param date
 	 * @param second
 	 * @return
 	 */
 	public static Date date_translation_second(Date date, int second) {
-		return date_translation_mill(date, second * 1000l);
+		return date_translation_mill(date, second * 1000);
 	}
 
 	/**
-	 * ½«Ê±¼äÆ½ÒÆ
+	 * å°†æ—¶é—´å¹³ç§»
 	 * 
 	 * @param date
 	 * @param day
@@ -450,67 +450,67 @@ public class TimeUtil {
 	 */
 	public static Date date_translation(Date date, int day, int hour,
 			int minute, int second) {
-		return date_translation_mill(date, day * 24l * 60 * 60 * 1000 + hour
+		return date_translation_mill(date, day * 24 * 60 * 60 * 1000 + hour
 				* 60l * 60 * 1000 + minute * 60l * 1000 + second * 1000l);
 	}
 
-	// ¡¾×ÓÊ±¡¿£¨23Ê±ÖÁ01Ê±£©Ò¹°ë£¬ÓÖÃû×ÓÒ¹¡¢ÖÐÒ¹£ºÊ®¶þÊ±³½µÄµÚÒ»¸öÊ±³½£®Êó
+	// ã€å­æ—¶ã€‘ï¼ˆ23æ—¶è‡³01æ—¶ï¼‰å¤œåŠï¼Œåˆåå­å¤œã€ä¸­å¤œï¼šåäºŒæ—¶è¾°çš„ç¬¬ä¸€ä¸ªæ—¶è¾°ï¼Žé¼ 
 	//
-	// ¡¾³óÊ±¡¿£¨01Ê±ÖÁ03Ê±£©¼¦Ãù£¬ÓÖÃû»Ä¼¦£ºÊ®¶þÊ±³½µÄµÚ¶þ¸öÊ±³½¡£Å£
+	// ã€ä¸‘æ—¶ã€‘ï¼ˆ01æ—¶è‡³03æ—¶ï¼‰é¸¡é¸£ï¼Œåˆåè’é¸¡ï¼šåäºŒæ—¶è¾°çš„ç¬¬äºŒä¸ªæ—¶è¾°ã€‚ç‰›
 	//
-	// ¡¾ÒúÊ±¡¿£¨03Ê±ÖÁ05Ê±£©Æ½µ©£¬ÓÖ³ÆÀèÃ÷¡¢Ôç³¿¡¢Ê±ÊÇÒ¹ÓëÈÕµÄ½»ÌæÖ®¼Ê »¢
+	// ã€å¯…æ—¶ã€‘ï¼ˆ03æ—¶è‡³05æ—¶ï¼‰å¹³æ—¦ï¼Œåˆç§°é»Žæ˜Žã€æ—©æ™¨ã€æ—¶æ˜¯å¤œä¸Žæ—¥çš„äº¤æ›¿ä¹‹é™… è™Ž
 	//
-	// ¡¾Ã®Ê±¡¿£¨05Ê±ÖÁ07Ê±£©ÈÕ³ö£¬ÓÖÃûÆÆÏþ¡¢ÐñÈÕ£¬Ö¸Ì«Ñô¸ÕÂ¶Á³£¬³õÉýµÄÊ±¼ä¡£ ÍÃ
+	// ã€å¯æ—¶ã€‘ï¼ˆ05æ—¶è‡³07æ—¶ï¼‰æ—¥å‡ºï¼Œåˆåç ´æ™“ã€æ—­æ—¥ï¼ŒæŒ‡å¤ªé˜³åˆšéœ²è„¸ï¼Œåˆå‡çš„æ—¶é—´ã€‚ å…”
 	//
-	// ¡¾³½Ê±¡¿£¨07Ê±ÖÁ09Ê±£©Ê³Ê±£¬ÓÖÃûÔçÊ³£¬Ò²ÊÇ³ÔÔç·¹Ê±¼ä£¬ Áú
+	// ã€è¾°æ—¶ã€‘ï¼ˆ07æ—¶è‡³09æ—¶ï¼‰é£Ÿæ—¶ï¼Œåˆåæ—©é£Ÿï¼Œä¹Ÿæ˜¯åƒæ—©é¥­æ—¶é—´ï¼Œ é¾™
 	//
-	// ¡¾ËÈÊ±¡¿£¨09Ê±ÖÁ11Ê±£©ÓçÖÐ£¬ÓÖÃûÈÕØ®µÈ£ºÁÙ½üÖÐÎçµÄÊ±ºò³ÆÎªÓçÖÐ¡£ Éß
+	// ã€å·³æ—¶ã€‘ï¼ˆ09æ—¶è‡³11æ—¶ï¼‰éš…ä¸­ï¼Œåˆåæ—¥ç¦ºç­‰ï¼šä¸´è¿‘ä¸­åˆçš„æ—¶å€™ç§°ä¸ºéš…ä¸­ã€‚ è›‡
 	//
-	// ¡¾ÎçÊ±¡¿£¨11Ê±ÖÁ13Ê±£©ÈÕÖÐ£¬ÓÖÃûÈÕÕý¡¢ÖÐÎçµÈ Âí
+	// ã€åˆæ—¶ã€‘ï¼ˆ11æ—¶è‡³13æ—¶ï¼‰æ—¥ä¸­ï¼Œåˆåæ—¥æ­£ã€ä¸­åˆç­‰ é©¬
 	//
-	// ¡¾Î´Ê±¡¿£¨13Ê±ÖÁ15Ê±£© ÈÕ•i£¬ÓÖÃûÈÕµø¡¢ÈÕÑëµÈ£ºÌ«ÑôÆ«Î÷ÎªÈÕµø¡£Ñò
+	// ã€æœªæ—¶ã€‘ï¼ˆ13æ—¶è‡³15æ—¶ï¼‰ æ—¥æ˜³ï¼Œåˆåæ—¥è·Œã€æ—¥å¤®ç­‰ï¼šå¤ªé˜³åè¥¿ä¸ºæ—¥è·Œã€‚ç¾Š
 	//
-	// ¡¾ÉêÊ±¡¿£¨15Ê³ÖÁ17Ê±£© ²¸Ê±£¬ÓÖÃûÈÕÆÌ¡¢Ï¦Ê³µÈ ºï
+	// ã€ç”³æ—¶ã€‘ï¼ˆ15é£Ÿè‡³17æ—¶ï¼‰ å“ºæ—¶ï¼Œåˆåæ—¥é“ºã€å¤•é£Ÿç­‰ çŒ´
 	//
-	// ¡¾ÓÏÊ±¡¿£¨17ÊÇÖÁ19Ê±£© ÈÕÈë£¬ÓÖÃûÈÕÂä¡¢°øÍí£ºÒâÎªÌ«ÑôÂäÉ½µÄÊ±ºò¡£ ¼¦
+	// ã€é…‰æ—¶ã€‘ï¼ˆ17æ˜¯è‡³19æ—¶ï¼‰ æ—¥å…¥ï¼Œåˆåæ—¥è½ã€å‚æ™šï¼šæ„ä¸ºå¤ªé˜³è½å±±çš„æ—¶å€™ã€‚ é¸¡
 	//
-	// ¡¾ÐçÊ±¡¿£¨19Ê±ÖÁ21Ê±£© »Æ»è£¬ÓÖÃûÈÕÏ¦¡¢ÈÕÄº¡¢ÈÕÍíµÈ£º´ËÊ±Ì«ÑôÒÑ¾­ÂäÉ½£¬Ìì½«ºÚÎ´ºÚ¡£ÌìµØ»è»Æ£¬ÍòÎïëüëÊ£¬¹Ê³Æ»Æ»è¡£ ¹·
+	// ã€æˆŒæ—¶ã€‘ï¼ˆ19æ—¶è‡³21æ—¶ï¼‰ é»„æ˜ï¼Œåˆåæ—¥å¤•ã€æ—¥æš®ã€æ—¥æ™šç­‰ï¼šæ­¤æ—¶å¤ªé˜³å·²ç»è½å±±ï¼Œå¤©å°†é»‘æœªé»‘ã€‚å¤©åœ°æ˜é»„ï¼Œä¸‡ç‰©æœ¦èƒ§ï¼Œæ•…ç§°é»„æ˜ã€‚ ç‹—
 	//
-	// ¡¾º¥Ê±¡¿£¨21Ê±ÖÁ23Ê±£©ÈË¶¨£¬ÓÖÃû¶¨»èµÈ£º´ËÊ±Ò¹É«ÒÑÉî£¬ÈËÃÇÒ²ÒÑ¾­Í£Ö¹»î¶¯£¬°²ÐªË¯ÃßÁË¡£ÈË¶¨Ò²¾ÍÊÇÈË¾²¡£ Öí
+	// ã€äº¥æ—¶ã€‘ï¼ˆ21æ—¶è‡³23æ—¶ï¼‰äººå®šï¼Œåˆåå®šæ˜ç­‰ï¼šæ­¤æ—¶å¤œè‰²å·²æ·±ï¼Œäººä»¬ä¹Ÿå·²ç»åœæ­¢æ´»åŠ¨ï¼Œå®‰æ­‡ç¡çœ äº†ã€‚äººå®šä¹Ÿå°±æ˜¯äººé™ã€‚ çŒª
 	/**
-	 * Ê±¼ä×ª»»ÎªÉúÐ¤ ÊäÈëµÄÊÇÐ¡Ê±
+	 * æ—¶é—´è½¬æ¢ä¸ºç”Ÿè‚– è¾“å…¥çš„æ˜¯å°æ—¶
 	 * 
 	 * @param time
 	 * @return
 	 */
 	public static String time2Zodiac(int time) {
 		if (time >= 23 || time < 1)
-			return "×ÓÊ±";
+			return "å­æ—¶";
 		if (time >= 1 || time < 3)
-			return "³óÊ±";
+			return "ä¸‘æ—¶";
 		if (time >= 3 || time < 5)
-			return "ÒúÊ±";
+			return "å¯…æ—¶";
 		if (time >= 5 || time < 7)
-			return "Ã®Ê±";
+			return "å¯æ—¶";
 		if (time >= 7 || time < 9)
-			return "³½Ê±";
+			return "è¾°æ—¶";
 		if (time >= 9 || time < 11)
-			return "ËÈÊ±";
+			return "å·³æ—¶";
 		if (time >= 11 || time < 13)
-			return "ÎçÊ±";
+			return "åˆæ—¶";
 		if (time >= 13 || time < 15)
-			return "Î´Ê±";
+			return "æœªæ—¶";
 		if (time >= 15 || time < 17)
-			return "ÉêÊ±";
+			return "ç”³æ—¶";
 		if (time >= 17 || time < 19)
-			return "ÓÏÊ±";
+			return "é…‰æ—¶";
 		if (time >= 19 || time < 21)
-			return "ÐçÊ±";
-		return "º¥Ê±";
+			return "æˆŒæ—¶";
+		return "äº¥æ—¶";
 	}
 
 	/**
-	 * »ñµÃÊ±Çø
+	 * èŽ·å¾—æ—¶åŒº
 	 * 
 	 * @param date
 	 * @return
@@ -520,7 +520,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñµÃÊ±ÇøÆ«ÒÆÁ¿ Ïà¶ÔGMT RFC 82
+	 * èŽ·å¾—æ—¶åŒºåç§»é‡ ç›¸å¯¹GMT RFC 82
 	 * 
 	 * @param date
 	 * @return
@@ -530,7 +530,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñµÃÏÂÎç»òÉÏÎç
+	 * èŽ·å¾—ä¸‹åˆæˆ–ä¸Šåˆ
 	 * 
 	 * @param date
 	 * @return
@@ -540,7 +540,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñµÃµ±Ç°Î¢ÃîÊý 9Î»
+	 * èŽ·å¾—å½“å‰å¾®å¦™æ•° 9ä½
 	 * 
 	 * @param date
 	 * @return
@@ -550,7 +550,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñµÃµ±Ç°ºÁÃëÊý 3Î»
+	 * èŽ·å¾—å½“å‰æ¯«ç§’æ•° 3ä½
 	 * 
 	 * @param date
 	 * @return
@@ -560,7 +560,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñµÃµ±Ç°Ãë 2Î»
+	 * èŽ·å¾—å½“å‰ç§’ 2ä½
 	 * 
 	 * @param date
 	 * @return
@@ -570,7 +570,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñµÃµ±Ç°·ÖÖÓ 2Îª
+	 * èŽ·å¾—å½“å‰åˆ†é’Ÿ 2ä¸º
 	 * 
 	 * @param date
 	 * @return
@@ -580,7 +580,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñµÃµ±Ç°Ð¡Ê± 1-12
+	 * èŽ·å¾—å½“å‰å°æ—¶ 1-12
 	 * 
 	 * @param date
 	 * @return
@@ -590,7 +590,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñµÃµ±Ç°Ð¡Ê± 0-23
+	 * èŽ·å¾—å½“å‰å°æ—¶ 0-23
 	 * 
 	 * @param date
 	 * @return
@@ -600,7 +600,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñµÃµ±Ç°Ð¡Ê± 01-12
+	 * èŽ·å¾—å½“å‰å°æ—¶ 01-12
 	 * 
 	 * @param date
 	 * @return
@@ -610,7 +610,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñµÃµ±Ç°Ð¡Ê± 00-23
+	 * èŽ·å¾—å½“å‰å°æ—¶ 00-23
 	 * 
 	 * @param date
 	 * @return
@@ -620,7 +620,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñµÃµ±Ç°Ê±¼ä 15:25
+	 * èŽ·å¾—å½“å‰æ—¶é—´ 15:25
 	 * 
 	 * @param date
 	 * @return
@@ -630,7 +630,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñµÃµ±Ç°Ê±¼ä 15:23:50
+	 * èŽ·å¾—å½“å‰æ—¶é—´ 15:23:50
 	 * 
 	 * @param date
 	 * @return
@@ -640,7 +640,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñµÃµ±Ç°Ê±¼ä 03:22:06 ÏÂÎç
+	 * èŽ·å¾—å½“å‰æ—¶é—´ 03:22:06 ä¸‹åˆ
 	 * 
 	 * @param date
 	 * @return
@@ -650,7 +650,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñÈ¡µ±Ç°Ê±¼äµ½ÈÕ 03/25/08£¨ÔÂ/ÈÕ/Äê£©
+	 * èŽ·å–å½“å‰æ—¶é—´åˆ°æ—¥ 03/25/08ï¼ˆæœˆ/æ—¥/å¹´ï¼‰
 	 * 
 	 * @param date
 	 * @return
@@ -660,7 +660,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñÈ¡µ±Ç°Ê±¼äµ½ÈÕ 2008-03-25 Äê¡ªÔÂ¡ªÈÕ
+	 * èŽ·å–å½“å‰æ—¶é—´åˆ°æ—¥ 2008-03-25 å¹´â€”æœˆâ€”æ—¥
 	 * 
 	 * @param date
 	 * @return
@@ -670,7 +670,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñµÃÈÕÆÚÌì 1-31
+	 * èŽ·å¾—æ—¥æœŸå¤© 1-31
 	 * 
 	 * @param date
 	 * @return
@@ -680,7 +680,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñµÃÈÕÆÚÌì 01-31
+	 * èŽ·å¾—æ—¥æœŸå¤© 01-31
 	 * 
 	 * @param date
 	 * @return
@@ -690,7 +690,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * Ò»ÄêÖÐµÄµÚ¼¸Ìì 085
+	 * ä¸€å¹´ä¸­çš„ç¬¬å‡ å¤© 085
 	 * 
 	 * @param date
 	 * @return
@@ -700,14 +700,14 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñµÃÔÂ·Ý¼ò³Æ
+	 * èŽ·å¾—æœˆä»½ç®€ç§°
 	 */
 	public static String month_referred(Date date) {
 		return String.format("%tb", date);
 	}
 
 	/**
-	 * »ñµÃÔÂ·ÝÈ«³Æ
+	 * èŽ·å¾—æœˆä»½å…¨ç§°
 	 * 
 	 * @param date
 	 * @return
@@ -717,7 +717,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñµÃÔÂ·Ý 01-12
+	 * èŽ·å¾—æœˆä»½ 01-12
 	 * 
 	 * @param date
 	 * @return
@@ -727,7 +727,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñµÃÐÇÆÚ¼ò³Æ
+	 * èŽ·å¾—æ˜ŸæœŸç®€ç§°
 	 * 
 	 * @param date
 	 * @return
@@ -737,7 +737,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñµÃÐÇÆÚÈ«³Æ
+	 * èŽ·å¾—æ˜ŸæœŸå…¨ç§°
 	 * 
 	 * @param date
 	 * @return
@@ -747,7 +747,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñµÃÄê¼ò³Æ 16
+	 * èŽ·å¾—å¹´ç®€ç§° 16
 	 * 
 	 * @param date
 	 * @return
@@ -757,7 +757,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñµÃÄêÈ«³Æ 2016
+	 * èŽ·å¾—å¹´å…¨ç§° 2016
 	 * 
 	 * @param date
 	 * @return
@@ -767,7 +767,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * ÐÇÆÚ¶þ ÈýÔÂ 25 13:37:22 CST 2016
+	 * æ˜ŸæœŸäºŒ ä¸‰æœˆ 25 13:37:22 CST 2016
 	 * 
 	 * @param date
 	 * @return
@@ -777,7 +777,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñÈ¡Ê±¼ä´Áµ½ºÁÃë
+	 * èŽ·å–æ—¶é—´æˆ³åˆ°æ¯«ç§’
 	 * 
 	 * @param date
 	 * @return
@@ -787,7 +787,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * »ñÈ¡Ê±¼ä´Áµ½ºÁÃë
+	 * èŽ·å–æ—¶é—´æˆ³åˆ°æ¯«ç§’
 	 * 
 	 * @return
 	 * 
@@ -817,7 +817,7 @@ public class TimeUtil {
 	/**
 	 * 
 	 * @param time
-	 *            »ñµÃÏµÍ³µÄÊ±¼ä ÊäÈëForTime.DAY»ñµÃÌì£¬ForTime.MONTH»ñµÃÔÂ£¬ForTime.YEAR»ñµÃÄê
+	 *            èŽ·å¾—ç³»ç»Ÿçš„æ—¶é—´ è¾“å…¥ForTime.DAYèŽ·å¾—å¤©ï¼ŒForTime.MONTHèŽ·å¾—æœˆï¼ŒForTime.YEARèŽ·å¾—å¹´
 	 */
 	public static int getSysTime(int time) {
 		Calendar ca = Calendar.getInstance();
@@ -836,13 +836,13 @@ public class TimeUtil {
 	/**
 	 * 
 	 * @param format
-	 *            »ñµÃÏµÍ³µÄÊ±¼äµ½Ìì
+	 *            èŽ·å¾—ç³»ç»Ÿçš„æ—¶é—´åˆ°å¤©
 	 */
 	public static String getSysTimeDay(int format) {
 		switch (format) {
 		case format1:
-			return getSysTime(YEAR) + "Äê" + getSysTime(MONTH) + "ÔÂ"
-					+ getSysTime(DAY) + "ÈÕ";
+			return getSysTime(YEAR) + "å¹´" + getSysTime(MONTH) + "æœˆ"
+					+ getSysTime(DAY) + "æ—¥";
 		case format2:
 			return getSysTime(YEAR) + "-" + getSysTime(MONTH) + "-"
 					+ getSysTime(DAY);
@@ -860,7 +860,7 @@ public class TimeUtil {
 	/**
 	 * 
 	 * @param format
-	 *            »ñµÃÏµÍ³µÄÊ±¼äµ½Ãë
+	 *            èŽ·å¾—ç³»ç»Ÿçš„æ—¶é—´åˆ°ç§’
 	 */
 	public static String getSysTimeSecond(int format) {
 		Calendar rightNow = Calendar.getInstance();
@@ -870,7 +870,7 @@ public class TimeUtil {
 			fmt = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 			return fmt.format(rightNow.getTime());
 		case format2:
-			fmt = new SimpleDateFormat("yyyyÄêMMÔÂddÈÕ HH:mm:ss");
+			fmt = new SimpleDateFormat("yyyyå¹´MMæœˆddæ—¥ HH:mm:ss");
 			return fmt.format(rightNow.getTime());
 		case format3:
 			fmt = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
@@ -879,14 +879,14 @@ public class TimeUtil {
 		default:
 			break;
 		}
-		fmt = new SimpleDateFormat("yyyyÄêMMÔÂddÈÕ hh:mm:ss");
+		fmt = new SimpleDateFormat("yyyyå¹´MMæœˆddæ—¥ hh:mm:ss");
 		return fmt.format(rightNow.getTime());
 	}
 
 	/**
 	 * 
 	 * @param MonthFirstDayToWeek
-	 *            »ñµÃÉÏ¸öÔÂÒª¼ÓÈëµÄÌìÊý
+	 *            èŽ·å¾—ä¸Šä¸ªæœˆè¦åŠ å…¥çš„å¤©æ•°
 	 */
 	public static int getLastMonth(String MonthFirstDayToWeek) {
 		return WeekToInt(MonthFirstDayToWeek);
@@ -896,7 +896,7 @@ public class TimeUtil {
 	 * 
 	 * @param MonthFirstDayToWeek
 	 * @param day
-	 *            »ñµÃÏÂ¸öÔÂ¼ÓÈëµÄÌìÊý
+	 *            èŽ·å¾—ä¸‹ä¸ªæœˆåŠ å…¥çš„å¤©æ•°
 	 */
 	public static int getNextMonth(String MonthFirstDayToWeek, int day) {
 		int i = 0;
@@ -911,21 +911,21 @@ public class TimeUtil {
 	/**
 	 * 
 	 * @param week
-	 *            ½«ÐÇÆÚ×ª»»³ÉÊý×Ö
+	 *            å°†æ˜ŸæœŸè½¬æ¢æˆæ•°å­—
 	 */
 	public static int WeekToInt(String week) {
 		int week1 = 0;
-		if (week.equals("ÐÇÆÚÒ»") || week.equals("Monday"))
+		if (week.equals("æ˜ŸæœŸä¸€") || week.equals("Monday"))
 			return 1;
-		if (week.equals("ÐÇÆÚ¶þ") || week.equals("Tuesday"))
+		if (week.equals("æ˜ŸæœŸäºŒ") || week.equals("Tuesday"))
 			return 2;
-		if (week.equals("ÐÇÆÚÈý") || week.equals("Wednesday"))
+		if (week.equals("æ˜ŸæœŸä¸‰") || week.equals("Wednesday"))
 			return 3;
-		if (week.equals("ÐÇÆÚËÄ") || week.equals("Thursday"))
+		if (week.equals("æ˜ŸæœŸå››") || week.equals("Thursday"))
 			return 4;
-		if (week.equals("ÐÇÆÚÎå") || week.equals("Friday"))
+		if (week.equals("æ˜ŸæœŸäº”") || week.equals("Friday"))
 			return 5;
-		if (week.equals("ÐÇÆÚÁù") || week.equals("Saturday"))
+		if (week.equals("æ˜ŸæœŸå…­") || week.equals("Saturday"))
 			return 6;
 		return week1;
 	}
@@ -933,7 +933,7 @@ public class TimeUtil {
 	/**
 	 * 
 	 * @param year
-	 *            ÅÐ¶ÏÈòÄê
+	 *            åˆ¤æ–­é—°å¹´
 	 */
 	public static boolean leapYear(int year) {
 		if (year % 100 == 0) {
@@ -948,7 +948,7 @@ public class TimeUtil {
 	 * 
 	 * @param month
 	 * @param year
-	 *            »ñµÃÄ³ÄêÄ³ÔÂµÄÌìÊý
+	 *            èŽ·å¾—æŸå¹´æŸæœˆçš„å¤©æ•°
 	 */
 	public static int getMonthDay(int month, int year) {
 		switch (month) {
@@ -975,7 +975,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * È¡ÏµÍ³Ê±¼ä14Î»
+	 * å–ç³»ç»Ÿæ—¶é—´14ä½
 	 */
 	public static String getNanoTimeS() {
 
@@ -995,7 +995,7 @@ public class TimeUtil {
 	}
 
 	/****
-	 * »ñÈ¡Ê±¼ä´Á
+	 * èŽ·å–æ—¶é—´æˆ³
 	 * 
 	 * @return
 	 */
@@ -1007,7 +1007,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * ½«Ê±¼ä×ª»»ÎªÊ±¼ä´Á
+	 * å°†æ—¶é—´è½¬æ¢ä¸ºæ—¶é—´æˆ³
 	 * 
 	 * @return
 	 */
@@ -1018,7 +1018,7 @@ public class TimeUtil {
 			case format1:
 				simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 			case format2:
-				simpleDateFormat = new SimpleDateFormat("yyyyÄêMMÔÂddÈÕ HH:mm:ss");
+				simpleDateFormat = new SimpleDateFormat("yyyyå¹´MMæœˆddæ—¥ HH:mm:ss");
 			case format3:
 				simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 			}
@@ -1031,7 +1031,7 @@ public class TimeUtil {
 		}
 	}
 
-	// ×ª»»Ê±¼äÎª½ñÌì+Ê±¼ä¡¢×òÌì¡¢Ç°Ìì¡¢¾ßÌåÈÕÆÚ
+	// è½¬æ¢æ—¶é—´ä¸ºä»Šå¤©+æ—¶é—´ã€æ˜¨å¤©ã€å‰å¤©ã€å…·ä½“æ—¥æœŸ
 	public static String getDateExchangeString(String shutDown, Date curentDate) {
 		if (shutDown.equals("") || curentDate == null || shutDown == null) {
 			return "";
@@ -1047,22 +1047,22 @@ public class TimeUtil {
 			e.printStackTrace();
 		}
 		int day_diff = curentDate.getDay() - date_shut.getDay();
-		// Log.d("day_diff", day_diff + "Ìì");
+		// Log.d("day_diff", day_diff + "å¤©");
 
-		String return_date = "¸üÔç";
+		String return_date = "æ›´æ—©";
 
 		if (date_shut.getYear() == curentDate.getYear()) {
 			if (date_shut.getMonth() == curentDate.getMonth()) {
 				switch (day_diff) {
 				case 0:
-					return_date = "½ñÌì  ";
+					return_date = "ä»Šå¤©  ";
 
 					break;
 				case 1:
-					return_date = "×òÌì";
+					return_date = "æ˜¨å¤©";
 					break;
 				case 2:
-					return_date = "Ç°Ìì";
+					return_date = "å‰å¤©";
 					break;
 
 				}
@@ -1076,7 +1076,7 @@ public class TimeUtil {
 	}
 
 	/**
-	 * ½«Ê±¼ä×ª»»ÎªÐÇ×ù
+	 * å°†æ—¶é—´è½¬æ¢ä¸ºæ˜Ÿåº§
 	 * 
 	 * @param day
 	 * @param month
@@ -1084,32 +1084,32 @@ public class TimeUtil {
 	 */
 	public static String time2Constellation(int day, int month) {
 		if ((month == 3 && day >= 21) || (month == 4 && day <= 19))
-			return "°×Ñò×ù";
+			return "ç™½ç¾Šåº§";
 		if ((month == 4 && day >= 20) || (month == 5 && day <= 20))
-			return "½ðÅ£×ù";
+			return "é‡‘ç‰›åº§";
 		if ((month == 5 && day >= 21) || (month == 6 && day <= 21))
-			return "Ë«×Ó×ù";
+			return "åŒå­åº§";
 		if ((month == 6 && day >= 22) || (month == 7 && day <= 22))
-			return "¾ÞÐ·×ù";
+			return "å·¨èŸ¹åº§";
 		if ((month == 7 && day >= 23) || (month == 8 && day <= 22))
-			return "Ê¨×Ó×ù";
+			return "ç‹®å­åº§";
 		if ((month == 8 && day >= 23) || (month == 9 && day <= 22))
-			return "´¦Å®×ù";
+			return "å¤„å¥³åº§";
 		if ((month == 9 && day >= 23) || (month == 10 && day <= 23))
-			return "Ìì³Ó×ù";
+			return "å¤©ç§¤åº§";
 		if ((month == 10 && day >= 24) || (month == 11 && day <= 22))
-			return "ÌìÐ«×ù";
+			return "å¤©èŽåº§";
 		if ((month == 11 && day >= 23) || (month == 12 && day <= 21))
-			return "ÉäÊÖ×ù";
+			return "å°„æ‰‹åº§";
 		if ((month == 12 && day >= 22) || (month == 1 && day <= 19))
-			return "Ä¦ôÉ×ù";
+			return "æ‘©ç¾¯åº§";
 		if ((month == 1 && day >= 20) || (month == 2 && day <= 18))
-			return "Ë®Æ¿×ù";
-		return "Ë«Óã×ù";
+			return "æ°´ç“¶åº§";
+		return "åŒé±¼åº§";
 	}
 
 	/**
-	 * Ê±¼ä´Á×ª»»ÎªÊ±¼ä
+	 * æ—¶é—´æˆ³è½¬æ¢ä¸ºæ—¶é—´
 	 * 
 	 * @param millis
 	 * @return
@@ -1138,11 +1138,11 @@ public class TimeUtil {
 		int m = mod / (60 * 1000);
 		mod = mod % (60 * 1000);
 		int s = mod / 1000;
-		return d + "Ìì" + h + "Ð¡Ê±" + m + "·ÖÖÓ" + s + "Ãë";
+		return d + "å¤©" + h + "å°æ—¶" + m + "åˆ†é’Ÿ" + s + "ç§’";
 	}
 
 	/**
-	 * Ê±¼ä×ª»¯
+	 * æ—¶é—´è½¬åŒ–
 	 * 
 	 * @return
 	 */
@@ -1183,9 +1183,9 @@ public class TimeUtil {
 			} else
 				times[1] = hour_H(date1);
 			if (now_day.equals(day) && !d_jia)
-				times[0] = "½ñÌì";
+				times[0] = "ä»Šå¤©";
 			else
-				times[0] = "Ã÷Ìì";
+				times[0] = "æ˜Žå¤©";
 			times[1] = hour_H(date1);
 			return times;
 		} catch (Exception e) {
